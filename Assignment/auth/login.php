@@ -4,7 +4,7 @@ if(isset($_POST['user'])){
     $user = $_POST["user"];
     $pass = $_POST["pass"];
 
-    if($pass == "123"){
+    if($pass == "000"){
         $_SESSION['userlogin'] = $user;
         header("location:../dashboard.php ");
     }else{
@@ -35,7 +35,7 @@ if(isset($_POST['user'])){
         </div>
         <section class="mt-10">
             <div class="flex justify-center items-center">
-                <div class="w-64 h-64 flex justify-center items-center">
+                <div class="w-48 h-48 flex justify-center items-center">
                     <img class="w-full object-cover" src="../logo/logo.png" alt="logo">
                 </div>
             </div>
