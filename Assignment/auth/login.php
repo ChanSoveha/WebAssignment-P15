@@ -4,7 +4,7 @@ if(isset($_POST['user'])){
     $user = $_POST["user"];
     $pass = $_POST["pass"];
 
-    if($pass == "000"){
+    if($pass == "0000"){
         $_SESSION['userlogin'] = $user;
         header("location:../dashboard.php ");
     }else{
