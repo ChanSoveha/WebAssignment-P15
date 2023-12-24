@@ -4,6 +4,7 @@ if(!isset($_SESSION['userlogin'])){
     header("location: ./auth/login.php");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -149,5 +150,4 @@ if(!isset($_SESSION['userlogin'])){
     <!-- AdminLTE script -->
     <script src="https://adminlte.io/themes/v3/dist/js/adminlte.min.js"></script>
 </body>
-
 </html>
