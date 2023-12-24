@@ -1,15 +1,23 @@
 <?php 
+include('../structure/connection/connection.php');
 session_start();
 if(isset($_POST['user'])){
     $user = $_POST["user"];
     $pass = $_POST["pass"];
-
-    if($pass == "123"){
+    $query = $conn->prepare("SELECT * FROM users where user_name = :user and pwd = :pass");
+    $query->bindParam(':user', $user);
+    $query->bindParam(':pass', $pass);
+    $query->execute();
+    if($query->rowCount() == 1){
+        $user = $query->fetch(PDO::FETCH_ASSOC);
         $_SESSION['userlogin'] = $user;
         header("location:../dashboard.php ");
+        exit();
     }else{
         echo "<script>alert('Password is incoreect!')</script>";
+        echo $pass.$user;
     }
+    
 }
 ?>
 

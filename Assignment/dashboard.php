@@ -2,6 +2,8 @@
 session_start();
 if(!isset($_SESSION['userlogin'])){
     header("location: ./auth/login.php");
+}else{
+    $username = $_SESSION['userlogin']['user_name'];
 }
 ?>
 
@@ -40,7 +42,7 @@ if(!isset($_SESSION['userlogin'])){
                         <i class="fas fa-user"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header"><?php echo $_SESSION['userlogin']; ?></span>
+                        <span class="dropdown-item dropdown-header"><?php echo $username; ?></span>
                         <div class="dropdown-divider"></div>
                         <a href="./auth/logout.php" class="dropdown-item">
                             <i class="fas fa-sign-out-alt mr-2"></i> Logout
