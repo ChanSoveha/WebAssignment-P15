@@ -1,3 +1,6 @@
+<?php	
+    include('connection/connection.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,13 +78,19 @@
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-shopping-bag"></i>
-                                <p>Product</p>
+                                <p>Purchase</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>
-                                <p>Customer</p>
+                                <p>Product</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-user"></i>
+                                <p>Employee</p>
                             </a>
                         </li>
                         <li class="nav-item">
