@@ -36,19 +36,19 @@ include('structure/header.php');
             </div>
             <div id="product">
             <div class="form-group" style="display: flex; align-items: center;">
-                <div style="flex: 1; margin-right: 10px;">
+                <div style="flex: 2; margin-right: 10px;">
                     <label for="">Product</label>
                     <select name="pro_name[]" id="citySelect" class="form-control">
                         <!-- ... -->
                     </select>
                 </div>
 
-                <div style="flex: 1; margin-right: 10px;">
+                <div style="flex: 1; margin-left: 10px;">
                     <label for="">Quantity</label>
                     <input type="number" name="qty[]" class="form-control" id="qty">
                 </div>
 
-                <div style="flex: 1; margin-right: 10px;" class="d-flex">
+                <div style="flex: 1; margin-left: 10px;" class="d-flex">
                     <div>
                     <label for="">Price</label>
                     <div class="input-group">
@@ -60,7 +60,7 @@ include('structure/header.php');
             </div>
             </div>
             <div class="d-flex justify-content-end mb-3">
-                <div class="mx-5">
+                <div class="mx-6" >
                     <button class="btn btn-primary my-auto" type="button" id="add">Add Product</button>
                 </div>
             </div>
